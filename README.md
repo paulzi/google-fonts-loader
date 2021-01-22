@@ -4,6 +4,8 @@ Load fonts to document from google fonts service.
 
 This library only provides the ability to programmatically load fonts. If you need a component for choosing a font from a dropdown, you will need a custom select library.
 
+[DEMO](https://paulzi.github.io/google-fonts-loader/index.html)
+
 ## Usage
 
 Import required functions from library:
