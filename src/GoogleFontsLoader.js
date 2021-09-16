@@ -101,7 +101,7 @@ export function loadAndAwait(list, query = {}, glyphs) {
                         item.wght ? item.wght : null,
                         item.wdth ? item.wdth : null,
                         '1em',
-                        item.family,
+                        "'" + item.family + "'",
                     ].filter(part => part !== null).join(' ');
                     promises.push(doc.fonts.load(font, glyphs));
                 });
@@ -227,7 +227,7 @@ export function getMainStyle(styles) {
  */
 export function styleToCSS(style) {
     let result = {};
-    result['font-family'] = style.family;
+    result['font-family'] = "'" + style.family + "'";
     result['font-weight'] = style.wght || 400;
     result['font-style']  = style.ital ? 'italic' : 'normal';
     return entries(result).map(kv => kv.join(':')).join(';');
