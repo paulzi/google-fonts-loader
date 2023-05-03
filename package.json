@@ -1,8 +1,10 @@
 {
   "name": "google-fonts-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Google Fonts Loader",
   "main": "src/GoogleFontsLoader.js",
+  "module": "src/GoogleFontsLoader.js",
+  "type": "module",
   "authors": [
     {
       "name": "PaulZi",
@@ -37,8 +39,8 @@
     "defaults"
   ],
   "scripts": {
-    "build:dev": "webpack --config webpack.config.js -d --mode=development && npm run copy-docs",
-    "build:prod": "webpack --config webpack.config.js -p --devtool cheap-module-source-map --mode=production && npm run copy-docs",
+    "build:dev": "webpack --config webpack.config.cjs -d --mode=development && npm run copy-docs",
+    "build:prod": "webpack --config webpack.config.cjs -p --devtool cheap-module-source-map --mode=production && npm run copy-docs",
     "copy-docs": "cp dist/* ./docs"
   }
 }

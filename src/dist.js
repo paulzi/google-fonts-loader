@@ -1,2 +1,2 @@
-import GoogleFontsLoader from './GoogleFontsLoader';
+import GoogleFontsLoader from './GoogleFontsLoader.js';
 window.GoogleFontsLoader = GoogleFontsLoader;
